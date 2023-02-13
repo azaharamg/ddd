@@ -1,0 +1,9 @@
+{
+    "name": "ddd",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "DDD",
+    "main": "index.js",
+    "author": "",
+    "license": "ISC"
+}
