@@ -4,4 +4,10 @@ export default class Cart {
   add(product) {
     this.products.push(product);
   }
+
+  remove(productName) {
+    this.products = this.products.filter(
+      (item) => productName !== item.product.name
+    );
+  }
 }
