@@ -1,6 +1,7 @@
 export default class Cart {
   products = [];
-  removedProductsHistory = []
+  removedProductsHistory = [];
+  id = Math.random();
 
   add(product) {
     this.products.push(product);
@@ -16,5 +17,9 @@ export default class Cart {
 
   getRemovedProductsHistory() {
     return this.removedProductsHistory;
+  }
+
+  equals(cart) {
+    return this.id === cart.id;
   }
 }
