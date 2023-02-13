@@ -10,5 +10,7 @@ const cartProduct2 = new CartProduct(headPhone, 1);
 cart.add(cartProduct);
 cart.add(cartProduct2);
 
-cart.remove("Apple Pencil");
-console.log(cart);
+cart.remove(appelPencil);
+
+// cart.remove("Sony head phone");
+console.log(cart.getRemovedProductsHistory());
