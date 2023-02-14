@@ -2,6 +2,7 @@ export default class Cart {
   products = [];
   removedProductsHistory = [];
   id = Math.random();
+  isCheckedOut = false;
 
   add(product) {
     this.products.push(product);
@@ -21,5 +22,12 @@ export default class Cart {
 
   equals(cart) {
     return this.id === cart.id;
+  }
+
+  checkout() {
+    if (this.isCheckedOut === false) {
+      isCheckedOut = true;
+      return new Order(products);
+    }
   }
 }
