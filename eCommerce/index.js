@@ -14,7 +14,7 @@ const priceWithDiscount = priceCalculator.getDiscountedPrice(
   10
 );
 
-const applePencil = new Product("Apple Pencil", priceWithDiscount);
+const applePencil = new Product("Apple Pencil", priceWithDiscount, 3);
 const cartProduct = new CartProduct(applePencil, 2);
 cart1.add(cartProduct);
 
