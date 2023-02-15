@@ -5,6 +5,7 @@ export default class Customer {
   }
 
   updateAddress(address) {
+    // update all bankListAccounts
     this.address = address;
   }
 }
